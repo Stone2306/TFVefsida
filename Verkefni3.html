@@ -61,14 +61,16 @@
                                     
                                     <section>
                                     <h3>Íhlutir</h3>
+                                        <p>
                                     Fyrsta skrefið var að ákvarða alla íhluti bílsins til að ganga úr skugga um að allt kæmist fyrir í bílnum.
                                         Við fundum pakka af 6 mótorum á góðu verð á amazon, auk þess keyptum við dekk í stærri kantinum þar sem við vildum hafa valmöguleikann
                                         að keyra úti á bílnum. Við ákváðum að gera okkar eigin H-bridge mótorstýringar til að spara pening, en þær taka þó meira pláss en tilbúnar.
                                         Síðast en ekki síst er raspberry pi örtölva til að stýra öllu.
+                                        </p>
                                     </section>
 
 									<section>
-										<h3 class="major">Hönnun og teikning</h3>
+								    <h3>Chassis</h3>
 										<p> 
                                             Ég nýtti mér reynslu mína í teikniforritum og byrjaði á að teikna einfaldan bút parametrískt svo allt kæmist fyrir í honum. 
 										<p>
@@ -77,44 +79,92 @@
                                         Svo var búkurinn gerður að opinni skel til að koma öllum rafmagns íhlutum fyrir innan í bílnum.</p>
                                         <div><a class="image"> <img src=images/Chassis_lok.jpg style="width:400px;height:300px"></a></div>
                                         <p>Næst var teiknað lok á búkinn til að skýla rafbúnaðinum</p>
+                                        <video width="400" controls>
+                                            <source src="images/Motorhysing.mp4" type="video/mp4">
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                        <p>Fyrst var prentað test styki af mótor hýsingunni ásamt test stykki af öxlum á prentara í VR3. (Fjallað um öxlana seinna)</p>
+                                        <div><a class="image"> <img src=images/Prent.jfif style="width:300px;height:400px"></a></div>
+                                        <p>Hýsingin virkaði vel og þá var hægt að prenta búkinn í heild sinni. Chassisið var prentað á Qidi plus4 með eftirfarandi stillingum:</p>
+                                        <ul>
+                                            <li>210c prent hiti, 60c bed</li>
+                                            <li>Layer height: 0.2 mm</li>
+                                            <li>Layer width: 0.42</li>
+                                            <li>initial layer: 50mm/s</li>
+                                            <li>outer wall: 100mm/s</li>
+                                            <li>inner wall: 120mm/s</li>
+                                            <li>infil: 15%</li>
+                                            <li>Walls: 3</li>
+                                            <li>Top shell layers: 3</li>
+                                            <li>Bottom shell layers: 3</li>
+                                        </ul>
                                         
-                                        <div style="width:100%;height:300px;">
+                                        <p>Prentið gekk vel í fyrstu tilraun og þolir allt álag sem það þarf að þola.</p>
+                                         <div style="width:100%;height:300px;">
+                                            <img src="images/Myndir/IMG_3899.jpeg" alt="Standandi Öxull" style="float:left;width:50%;height:100%;">
+                                            <img src="images/Myndir/IMG_3900.jpeg" alt="Liggjandi Öxull" style="float:left;width:50%;height:100%;">
+                                        </div>
+                                    </section>
+                                    
+                                        
+								    <section>
+										<h3>Öxlar</h3>
+                                        <p>Öxlarnir voru ekki eins einfaldir í framleiðslu, en þeir þurfa að þola meira álag á minna svæði.
+                                        Það voru tvö vandamál sem þurfti að leysa með öxlana. Hvernig á að fá þá til að þola álagið sem þeir þurfa og hvernig á að festa þá á mótorana, sem hafa hringlótta rótora sem erfitt er að grípa í.
+                                        Festingin við dekkin var einföld, en þau hafa sexhyrnt indent með gati í miðjunni sem hægt er að setja skrúfu í gegnum.</p>
+                                         <div style="width:100%;height:300px;">
                                             <img src="\images\Oxullstandandi.jpg" alt="Standandi Öxull" style="float:left;width:50%;height:100%;">
                                             <img src="\images\Oxullliggjandi.jpg" alt="Paris" style="float:left;width:50%;height:100%;">
                                         </div>
-                                        <p>Síðast voru teiknaðir Öxlar til að tengja dekkin við mótorana. Dekkin hafa sexhyrnt gat í miðjunni ásamt skrúfgati sem er kjörið í að festa öxlana.
-                                        Mótorarnir hafa bar hringlótta enda sem erfitt er að festa neitt við svo ákveðið var að líma öxlana bar á.</p>
-                                        
-								
-										<h3>Prentun</h3>
-										<p><p>
-										<div><a class="image"> <img src=images/Box_teikning.jpg style="width:400px;height:300px"></a></div>
-										
-										<h4>Kerf test</h4>
-										<p>Til að hægt sé að skera út almennilegt pressfit þarf fyrst að framkvæma kerf test. Til að framkvæma testið var teiknað lítið test stykki</p>
-										<div><a class="image"> <img src=images/Kerf_teikning.jpg style="width:400px;height:400px"></a></div>
-										<p>Teikningin var færð yfir í inkscape þar sem hægt er að stilla línuþykktirnar sem geislaskerinn fylgir.</p>
-										<div><a class="image"> <img src=images/Fill.jpg style="width:400px;height:100px"></a></div>
-										<p>Í fill and stroke glugganum er hægt að stilla línulit og þykktir.
-										Fill þarf að vera sett í "No Paint".</p>
-										<div><a class="image"> <img src=images/StrokeP.jpg style="width:400px;height:200px"></a></div>
-										<p>Stroke paint er stillt í "Flat Color".</p>
-										<div><a class="image"> <img src=images/StrokeS.jpg style="width:400px;height:200px"></a></div>
-										<p>Í stroke style er hægt að stilla línuþykktir. Þetta er mikilvægasta stillingin uppá pressfit, fyrir utan stillingarnar á geislaskeranum sjálfum. Hér þarf að prófa sig áfram til að finna rétta línuþykkt.</p>
-										<div><a class="image"> <img src=images/Bitmap.jpg style="width:400px;height:400px"></a></div>
-										<p>Næsta skref er að "Trecea Bitmap", hér þarf einfaldlega að ýta á apply til að breyta línum í vectora sem geislaskerinn getur fylgt.</p>
-										<div><a class="image"> <img src=images/Export.jpg style="width:400px;height:400px"></a></div>
-										<p>Loks er teikningin exportuð sem SVG og þá er hægt að nota teikninguna í geislaskerann.</p>
-										<p>3 mismunandi línuþykktir voru prófaðar til að fá gott pressfit. Fyrst var prófað 0,171 sem reyndist of laust. Þá var prófað 0,172 sem var betra en ekki alveg nógu fast. Síðast var prófað 0,1725 sem virkaði mjög vel og var því notað í skurðinum á boxinu.</p>
-										<div><a class="image"> <img src=images/Kerf_raun.jpeg style="width:400px;height:600px"></a></div>
+										<p>Til að festa öxlana á mótorana var hugmyndin að að setja göt í hliðarnar á öxlunum sem hægt væri að setja stoppskrúfur í til að grípa í rótorana. Tveir öxlar voru prentaðir til að byrja með,
+                                        annar var prentaður standandi og þolir þannig meira álag í langstefnu hans, hinn var prentaður liggjandi til að þola meira beygjuálag.</p>
+                                        <div style="width:100%;height:300px;">
+                                            <img src="images/Myndir/IMG_3892.jpeg" alt="Standandi Öxull" style="float:left;width:50%;height:100%;">
+                                            <img src="images/Myndir/IMG_3893.jpeg" alt="Paris" style="float:left;width:50%;height:100%;">
+                                        </div>
+                                        <p>Fyrsta prent var gert með 15% infil, og alltaf þegar við skrúfuðum inn í götin og komumst í snertingu við mótorana opnuðust öxlarnir.
+                                        Við reyndum nokkrar mismunandi lausnir. Við límdum insert í götin til að skrúfa í gegnum, en þó splundruðust öxlarnir. Við prentuðum aftur með 100% infil</p>
+                                        <div><a class="image"> <img src=images/Myndir/IMG_3891.jpeg style="width:300px;height:400px"></a></div>
+                                        <p>En enn brotnuðu öxlarnir.</p>
+                                        <p>Að lokum prentuðum við öxlana í tveim pörtum með 100% infil, til að ná að prenta þá liggjandi án þess að þurfa að hafa þvermálið jafnt sexhyrningnum.</p>
+                                        <div><a class="image"> <img src=images/Myndir/IMG_3901.jpeg style="width:400px;height:400px"></a></div>
+                                        <p>Helmingarnir voru límdir saman og mótor rótorarnir voru límdir inn í öxlana. Því miður þýðir þetta að það er ekki hægt að taka mótorana út úr bílnum en þetta heldur allavega nógu vel.</p>
+                                        <div><a class="image"> <img src=images/35ca8852-1f8f-4946-913f-cbd0c2207935.jfif style="width:400px;height:400px"></a></div>
+                                    </section>
+                                    
+									<section>	
+										<h3>Samsetning</h3>
+										<p>Nú var búið að prófa öxlana og sjá til að þeir virkuðu, og sjá til þess að allir íhlutir kæmust þægilga fyrir.
+                                        Mörg götin sem voru gerð í bílinn voru of lítil, svo við þurftum að stækka þau. Insert voru sett í búkinn fyrir lokið, raspberry pi og mótorstýringarnar.
+                                        </p>
+                                        <video width="400" controls>
+                                            <source src="images/Opna.mp4" type="video/mp4">
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                        <p>Það sést ekki mjög vel í myndbandinu en insertin halda vel og einfalda festingu á lokinu.</p>
+                                        <p>Öxlarnir voru límdir á mótorana sem festir mótorana í bílnum þar sem þeir renna í gegnum mótorhýsinguna. Síðast voru rafmagnsíhlutir allir festir í bílinn.</p>
+                                        <div><a class="image"> <img src=images/IMG_3952.jpeg style="width:400px;height:400px"></a></div>
 									</section>
+                                    
+                                    <section>
+                                    <h3>Lokaútkoma</h3>
+                                        <p>Því miður hefur bíllinn enn ekki keyrt. Mótorstýringarnar okkar virkuðu á einn mótor, en þegar allt var sett saman og reynt að fá bílinn til að keyra
+                                        snérust hjólin í mjög stuttan tíma áður en batteríin ofhitnuðu. Mótorarnir sem við keyptum voru of öflugir fyrir rafbúnaðinn sem var notaður í mótorstýringarnar.
+                                        <a href="Sm%C3%AD%C3%B0averkefni_2.pdf">Hér</a> er hægt að lesa meira um rafbúnaðinn en hann var gerður sem verkefni í öðrum áfanga</p>
+                                    </section>
 									
 									<section>
-									<h3>Lokaútkoma</h3>
-										<p>Til að skera boxið var SVG sett á usb kubb og tengt við tölvuna sem er tengt við geislaskerann. Þar er forrit sem hægt er að stilla þykkt og gerð efnis auk staðsetning á teikningunni á plötunni sem er skorið úr.</p>
-										<p>Boxið var skorið og sett saman</p>
-										<div><a class="image"> <img src=images/Box_tilbuid.jpeg style="width:400px;height:500px"></a></div>
-										<p>Eins og sést voru parametrarnir eitthvað vitlaust stilltir og pinnarnir stinga út á öllum hliðum boxsins. Þetta reyndist þó frekar hentugt þar sem þetta einfaldar að taka boxið í sundur, sem getur verið mikilvægt ef skipta þarf um snúrur.</p>
+									<h3>Ýmsar myndir og myndbönd</h3>
+                                        <figure>
+                                        <img src="images/Myndir/IMG_3946.jpeg" style="width: 400px;height: 500px">
+                                            <figcaption>Heimagerð H-bridge mótorstýring</figcaption>
+                                        </figure>
+										<figure>
+                                            <video width="400" controls>
+                                            <source src="images/Oxull_snuast.mp4" style="width: 400px;height: 500px">
+                                            </video>
+                                            <figcaption>Öxull límdur á mótor að snúast</figcaption>
+                                        </figure>
 									</section>
 								</div>
 							</div>
