@@ -30,9 +30,9 @@
 						<div class="inner">
 							<h2>Menu</h2>
 							<ul class="links">
-								<li><a href="index.html">Heim</a></li>
-								<li><a href="generic.html">Verkefni 1</a></li>
-								<li><a href="elements.html">Verkefni 2</a></li>
+								<li><a href="Heim.html">Heim</a></li>
+								<li><a href="Verkefni1.html">Verkefni 1</a></li>
+								<li><a href="Verkefni2.html">Verkefni 2</a></li>
 								<li><a href="Verkefni3.html">Verkefni 3</a></li>
 								<li><a href="Verkefni4.html">Verkefni 4</a></li>
 								<li><a href="#">CV</a></li>
@@ -48,7 +48,7 @@
 								<h2>Fræsing</h2>
 								<p>Fræsingin er gerð sem verkefni í TÖL403G - Tölvustudd framleiðsla, á haustönn 2024. Áfanginn er kenndur af Hafliða Ásgeirssyni. Markmið verkefnisins er að læra að hanna og framleiða fræstan hlut .</p>
                                 
-                                <p>Meðlimir verkefnisins eru <a href="#">Alexander Knudsen</a>, <a href="#">Sigurður Tómas Víðisson</a> og Þorsteinn Gunnarsson</p>
+                                <p>Meðlimir verkefnisins eru <a href="#">Alexander Knudsen</a>, <a href="https://sigurdurtomas.github.io/sigurdurtomas/">Sigurður Tómas Víðisson</a> og Þorsteinn Gunnarsson</p>
 							</div>
 						</header>
 
@@ -61,118 +61,51 @@
 										 <p>Í byrjun verkefnisins komu margar hugmyndir fram hjá hópnum en að lokum var ákveðið að nýta verkefnið
                                         í lokaverkefni Sigurðs í öðrum áfanga "Tölvustýrður vélbúnaður". Í þeim áfanga átti að hanna og framleiða
                                         einhvern tölvustýrðan vélbúnað að eigin vali. Verkefnið sem Sigurður ætlaði að gera í þeim áfanga var hentugt til að samnýta í þessum.
-                                        Kokteil róbot sem færir glas á milli mismunandi áfengis og blanda til að búa til einfalda kokteila.</p>
+                                        Kokteil róbot sem færir glas á milli mismunandi áfengis og blanda til að búa til einfalda kokteila kallaður "Mixie".</p>
 									</section>
                                     
                                     <section>
                                     <h3>Hönnun og skorður</h3>
                                         <p>
-                                        Helstu skorður verkefnisins voru ákvarðaðar af hinu verkefninu. Brúsarnir með drykkjunum þurftu að komast þægilega fyrir. 
+                                        Helstu skorður verkefnisins voru ákvarðaðar af hinu verkefninu. Við vildum geta haft átta mismunandi drykki í vélinni og sleði átti að fara á milli staða til að hella í glasið sem væri fast á sleðanum. Einnig vildum við að það væri nóg pláss fyrir klemmur sem halda rörunum lokuðum og hægt er að ýta á til að opna rörin og hleypa vökva í gegn.
                                         </p>
                                     </section>
 
 									<section>
-								    <h3>Teikning</h3>
+								    <h3>Hönnunarferlið</h3>
 										<p> 
-                                            Þorsteinn sá að mestu um teiknin 
+                                            Til að byrja með var teiknað grunnformið í Fusion 360. Vitað var að sleðinn væri 1m svo lengd var ákvörðuð til að sleðinn myndi passa sem best í vélina.
+                                            Teiknuð voru göt ofan á vélina fyrir drykkina svo hægt væri að geyma brúsa ofan á vélinni. Svo var bætt smá útskurð á textanum Mixie framan á vélina því það þurfti að vera einhvers konar útskurður á plötunum. 
+                                            <div><a class="image"> <img src=images/Myndir/Flat_pattern.jfif style="width:100%"></a></div>
+                                            Eftir að Mixie var teiknuð í Fusion var gert setup og valið milling. Næst var gert new setup og 2D contour fyrir útlínunar og svo valið Engrave fyrir útskurðinn. Eftir að hafa valið þetta var gert new tool með eftirfarandi stillingum á flat end mill:
 										<p>
-                                            <div><a class="image"> <img src=images/Chassis1.jpg style="width:400px;height:300px"></a></div>
-                                        <p>Það helsta sem þarf að passa eru dekk, mótorar og rafmagnshlutir. Útskurðir fyrir dekkin voru gerð 1mm stærri en dekkin. Hýsingar voru gerðar fyrir mótora 1mm stærri með skrúfgötum.
-                                        Svo var búkurinn gerður að opinni skel til að koma öllum rafmagns íhlutum fyrir innan í bílnum.</p>
-                                        <div><a class="image"> <img src=images/Chassis_lok.jpg style="width:400px;height:300px"></a></div>
-                                        <p>Næst var teiknað lok á búkinn til að skýla rafbúnaðinum</p>
-                                        <video width="400" controls>
-                                            <source src="images/Motorhysing.mp4" type="video/mp4">
-                                            Your browser does not support HTML5 video.
-                                        </video>
-                                        <p>Fyrst var prentað test styki af mótor hýsingunni ásamt test stykki af öxlum á prentara í VR3. (Fjallað um öxlana seinna)</p>
-                                        <div><a class="image"> <img src=images/Prent.jfif style="width:300px;height:400px"></a></div>
-                                        <p>Hýsingin virkaði vel og þá var hægt að prenta búkinn í heild sinni. Chassisið var prentað á Qidi plus4 með eftirfarandi stillingum:</p>
                                         <ul>
-                                            <li>210c prent hiti, 60c bed</li>
-                                            <li>Layer height: 0.2 mm</li>
-                                            <li>Layer width: 0.42</li>
-                                            <li>initial layer: 50mm/s</li>
-                                            <li>outer wall: 100mm/s</li>
-                                            <li>inner wall: 120mm/s</li>
-                                            <li>infil: 15%</li>
-                                            <li>Walls: 3</li>
-                                            <li>Top shell layers: 3</li>
-                                            <li>Bottom shell layers: 3</li>
+                                            <li>Number of flutes: 2</li>
+                                            <li>Diameter: 6mm</li>
+                                            <li>Spindle speed: 14.000 rpm</li>
+                                            <li>Cutting feed rate: 3000 mm/mín</li>
                                         </ul>
-                                        
-                                        <p>Prentið gekk vel í fyrstu tilraun og þolir allt álag sem það þarf að þola.</p>
-                                         <div style="width:100%;height:300px;">
-                                            <img src="images/Myndir/IMG_3899.jpeg" alt="Standandi Öxull" style="float:left;width:50%;height:100%;">
-                                            <img src="images/Myndir/IMG_3900.jpeg" alt="Liggjandi Öxull" style="float:left;width:50%;height:100%;">
-                                        </div>
+                                            <div><a class="image"> <img src=images/Myndir/Stillingar.jfif style="width:100%"></a></div>
+                                        <p>
+                                        Þetta var sett í fræsinn með aðstoð Hafliða.
+                                        </p>
+                                        <div><a class="image"> <img src=images/Myndir/Fr%C3%A6sir.jfif style="width:100%"></a></div>
+                                        <p>Þorsteinn sá að mestu um teikninguna og Sigurður sá að mestu um toolpaths og fræsingu.</p>
                                     </section>
                                     
                                         
 								    <section>
-										<h3>Öxlar</h3>
-                                        <p>Öxlarnir voru ekki eins einfaldir í framleiðslu, en þeir þurfa að þola meira álag á minna svæði.
-                                        Það voru tvö vandamál sem þurfti að leysa með öxlana. Hvernig á að fá þá til að þola álagið sem þeir þurfa og hvernig á að festa þá á mótorana, sem hafa hringlótta rótora sem erfitt er að grípa í.
-                                        Festingin við dekkin var einföld, en þau hafa sexhyrnt indent með gati í miðjunni sem hægt er að setja skrúfu í gegnum.</p>
-                                         <div style="width:100%;height:300px;">
-                                            <img src="\images\Oxullstandandi.jpg" alt="Standandi Öxull" style="float:left;width:50%;height:100%;">
-                                            <img src="\images\Oxullliggjandi.jpg" alt="Paris" style="float:left;width:50%;height:100%;">
-                                        </div>
-										<p>Til að festa öxlana á mótorana var hugmyndin að að setja göt í hliðarnar á öxlunum sem hægt væri að setja stoppskrúfur í til að grípa í rótorana. Tveir öxlar voru prentaðir til að byrja með,
-                                        annar var prentaður standandi og þolir þannig meira álag í langstefnu hans, hinn var prentaður liggjandi til að þola meira beygjuálag.</p>
-                                        <div style="width:100%;height:300px;">
-                                            <img src="images/Myndir/IMG_3892.jpeg" alt="Standandi Öxull" style="float:left;width:50%;height:100%;">
-                                            <img src="images/Myndir/IMG_3893.jpeg" alt="Paris" style="float:left;width:50%;height:100%;">
-                                        </div>
-                                        <p>Fyrsta prent var gert með 15% infil, og alltaf þegar við skrúfuðum inn í götin og komumst í snertingu við mótorana opnuðust öxlarnir.
-                                        Við reyndum nokkrar mismunandi lausnir. Við límdum insert í götin til að skrúfa í gegnum, en þó splundruðust öxlarnir. Við prentuðum aftur með 100% infil</p>
-                                        <div><a class="image"> <img src=images/Myndir/IMG_3891.jpeg style="width:300px;height:400px"></a></div>
-                                        <p>En enn brotnuðu öxlarnir.</p>
-                                        <p>Að lokum prentuðum við öxlana í tveim pörtum með 100% infil, til að ná að prenta þá liggjandi án þess að þurfa að hafa þvermálið jafnt sexhyrningnum.</p>
-                                        <div><a class="image"> <img src=images/Myndir/IMG_3901.jpeg style="width:400px;height:400px"></a></div>
-                                        <p>Helmingarnir voru límdir saman og mótor rótorarnir voru límdir inn í öxlana. Því miður þýðir þetta að það er ekki hægt að taka mótorana út úr bílnum en þetta heldur allavega nógu vel.</p>
-                                        <div><a class="image"> <img src=images/35ca8852-1f8f-4946-913f-cbd0c2207935.jfif style="width:400px;height:400px"></a></div>
-                                    </section>
-                                    
-									<section>	
-										<h3>Samsetning</h3>
-										<p>Nú var búið að prófa öxlana og sjá til að þeir virkuðu, og sjá til þess að allir íhlutir kæmust þægilga fyrir.
-                                        Mörg götin sem voru gerð í bílinn voru of lítil, svo við þurftum að stækka þau. Insert voru sett í búkinn fyrir lokið, raspberry pi og mótorstýringarnar.
+										<h3>Post-Process</h3>
+                                        <p>Eftir fræsun boruðum við allt sem bora þurfti svo hægt væri að festa saman plöturnar. 
+                                            Það gleymdist að gera setup fyrir drykjar holurnar svo því var bætt við eftir fræsingu. 
+                                            Einnig var þykktin parametrísk í hönnuninni en hún var eitthvað vitlaust stillt, þannig að henni var breytt henni þá færðist hún ójafnt. Við þetta myndaðist smá auka bil þar sem sleðinn átti að vera. 
+                                            Þetta var þó hægt að laga það með lengri boltum. 
                                         </p>
-                                        <video width="400" controls>
-                                            <source src="images/Opna.mp4" type="video/mp4">
-                                            Your browser does not support HTML5 video.
-                                        </video>
-                                        <p>Það sést ekki mjög vel í myndbandinu en insertin halda vel og einfalda festingu á lokinu.</p>
-                                        <p>Öxlarnir voru límdir á mótorana sem festir mótorana í bílnum þar sem þeir renna í gegnum mótorhýsinguna. Síðast voru rafmagnsíhlutir allir festir í bílinn.</p>
-                                        <div><a class="image"> <img src=images/IMG_3952.jpeg style="width:400px;height:400px"></a></div>
-									</section>
-                                    
-                                    <section>
-                                    <h3>Lokaútkoma</h3>
-                                        <p>Því miður hefur bíllinn enn ekki keyrt. Mótorstýringarnar okkar virkuðu á einn mótor, en þegar allt var sett saman og reynt að fá bílinn til að keyra
-                                        snérust hjólin í mjög stuttan tíma áður en batteríin ofhitnuðu. Mótorarnir sem við keyptum voru of öflugir fyrir rafbúnaðinn sem var notaður í mótorstýringarnar.
-                                        Hér fyrir neðan er hægt að lesa meira um rafbúnaðinn en hann var gerður sem verkefni í öðrum áfanga</p>
-                                        <ul class="actions">
-											<li><a href="Sm%C3%AD%C3%B0averkefni_2.pdf" class="button primary icon solid fa-download">Rafbúnaður</a></li>
-										</ul>
-                                        <p>Prentið heldur þó vel, við prófuðum að setja álag á hann svipað og myndi koma í keyrslu og öxlarnir og búkurinn þoldu allt.
-                                        Bíllinn rúllar einnig vel sem er með því besta sem hægt var að vona með bíl sem keyrir ekki.</p>
-                                        <video src="images/Myndir/IMG_3907.mov" style="width: 100%" controls>
-                                        </video>
+                                        <p>Þegar búið var að gera allt tilbúið fyrir samsetningu tókum við plöturnar út og sprayuðum bleikar.
+                                        Svo buðum við samnemendum okkar út að spraya listaverk í bláu á plöturnar til að gefa Mixie soldinn karakter</p>
+                                        <div><a class="image"> <img src=images/Myndir/Mixie.jfif style="width:100%"></a></div>
+                                        <p>Við tókum allir þátt í að lita og setja saman rammann.</p>
                                     </section>
-									
-									<section>
-									<h3>Ýmsar myndir og myndbönd</h3>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-                                                <div class="col-6"><figure><span class="image fit"><img src="images/Myndir/IMG_3946.jpeg" alt="" /></span><figcaption>Heimagerð H-bridge mótorstýring</figcaption></figure></div>
-                                                <div class="col-6"><figure><span class="image fit"><video style="width: 100%" controls><source src="images/motor_snuast.mp4"></video></span><figcaption>Límdur öxull á snúandi mótor</figcaption></figure></div>
-                                                <div class="col-6"><figure><span class="image fit"><img src="images/oxlar.jfif" alt="" /></span><figcaption>Nokkrar útgáfur af öxlum</figcaption></figure></div>
-                                                <div class="col-6"><figure><span class="image fit"><img src="images/IMG_3881.jpeg" alt="" /></span><figcaption>Öxull með límt insert fyrir stoppskrúfu.</figcaption></figure></div>
-											</div>
-										</div>
-									</section>
 								</div>
 							</div>
 
